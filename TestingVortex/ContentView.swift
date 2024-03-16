@@ -11,14 +11,12 @@ import Vortex
 struct ContentView: View {
     var body: some View {
         VStack {
-          
           VortexViewReader { proxy in
             VortexView(.confetti) {
               Rectangle()
                 .fill(.white)
                 .frame(width: 16, height: 16)
                 .tag("square")
-              
               Circle()
                 .fill(.white)
                 .frame(width: 16)
@@ -30,7 +28,6 @@ struct ContentView: View {
               Text("effect")
             })
           }
-          
         }
         .padding()
     }
