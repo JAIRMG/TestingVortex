@@ -11,6 +11,7 @@
 		7A7F1EEE2BA1F7AE00EB7A33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F1EED2BA1F7AE00EB7A33 /* ContentView.swift */; };
 		7A7F1EF02BA1F7B000EB7A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7F1EEF2BA1F7B000EB7A33 /* Assets.xcassets */; };
 		7A7F1EF32BA1F7B000EB7A33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7F1EF22BA1F7B000EB7A33 /* Preview Assets.xcassets */; };
+		7A7F1EFB2BA1F7FE00EB7A33 /* Vortex in Frameworks */ = {isa = PBXBuildFile; productRef = 7A7F1EFA2BA1F7FE00EB7A33 /* Vortex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A7F1EFB2BA1F7FE00EB7A33 /* Vortex in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = TestingVortex;
+			packageProductDependencies = (
+				7A7F1EFA2BA1F7FE00EB7A33 /* Vortex */,
+			);
 			productName = TestingVortex;
 			productReference = 7A7F1EE82BA1F7AE00EB7A33 /* TestingVortex.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 7A7F1EDF2BA1F7AE00EB7A33;
+			packageReferences = (
+				7A7F1EF92BA1F7FD00EB7A33 /* XCRemoteSwiftPackageReference "Vortex" */,
+			);
 			productRefGroup = 7A7F1EE92BA1F7AE00EB7A33 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -269,9 +277,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TestingVortex/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -286,6 +295,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jair.moreno.gaspar.vortex.TestingVortex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,9 +307,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TestingVortex/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -314,6 +325,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jair.moreno.gaspar.vortex.TestingVortex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A7F1EF92BA1F7FD00EB7A33 /* XCRemoteSwiftPackageReference "Vortex" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/Vortex";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A7F1EFA2BA1F7FE00EB7A33 /* Vortex */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A7F1EF92BA1F7FD00EB7A33 /* XCRemoteSwiftPackageReference "Vortex" */;
+			productName = Vortex;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7A7F1EE02BA1F7AE00EB7A33 /* Project object */;
 }
