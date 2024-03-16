@@ -13,8 +13,7 @@ struct ContentView: View {
         VStack {
           
           VortexViewReader { proxy in
-          
-            VortexView(.confetti.makeUniqueCopy()) {
+            VortexView(.confetti) {
               Rectangle()
                 .fill(.white)
                 .frame(width: 16, height: 16)
@@ -25,7 +24,6 @@ struct ContentView: View {
                 .frame(width: 16)
                 .tag("circle")
             }
-            
             Button(action: {
               proxy.burst()
             }, label: {
